@@ -15,11 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepperOutlet: UIStepper!
     @IBOutlet weak var textFieldOutlet: UITextField!
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+
 
     @IBAction func stepper(_ sender: UIStepper) {
         let alert=UIAlertController(title: "Warning", message: "You have too many or too few pets!!!", preferredStyle: UIAlertController.Style.alert)
@@ -42,7 +38,7 @@ class ViewController: UIViewController {
     //https://www.hackingwithswift.com/example-code/language/how-to-convert-a-string-to-an-int
     func calc() -> Double{
         let combinedAgeString = textFieldOutlet.text
-        return 8 - stepperOutlet.value * Double(combinedAgeString!)! * 0.2
+        return (8 - stepperOutlet.value) * Double(combinedAgeString!)! * 0.2
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -50,9 +46,26 @@ class ViewController: UIViewController {
         return true
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
+    //Cant seem to get this called when expected, just going to have the logic in dismissKeyboard
+    //func textFieldDidEndEditing(_ textField: UITextField) {
+    //    numToBuy.text = String(calc())
+    //}
+ 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+        // Do any additional setup after loading the view.
+    }
+    
+    //https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
         numToBuy.text = String(calc())
     }
- 
+    
 }
 
