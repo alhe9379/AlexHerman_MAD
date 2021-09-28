@@ -37,7 +37,9 @@ class ViewController: UIViewController {
     
     //https://www.hackingwithswift.com/example-code/language/how-to-convert-a-string-to-an-int
     func calc() -> Double{
-        let combinedAgeString = textFieldOutlet.text
+        var combinedAgeString = textFieldOutlet.text
+        //combinedAgeString = (combinedAgeString ?? "0.0") //https://stackoverflow.com/questions/29381994/check-string-for-nil-empty/32867917
+        //print(combinedAgeString)
         return (8 - stepperOutlet.value) * Double(combinedAgeString!)! * 0.2
     }
     
@@ -64,8 +66,9 @@ class ViewController: UIViewController {
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
-        numToBuy.text = String(calc())
+        if(textFieldOutlet.text != ""){
+            numToBuy.text = String(calc())
+        }
     }
-    
 }
 

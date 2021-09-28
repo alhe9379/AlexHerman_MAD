@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="CYK-Su-77m">
-                                <rect key="frame" x="56" y="219" width="302" height="346.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="CYK-Su-77m">
+                                <rect key="frame" x="182" y="14" width="303" height="347"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-lE-Wl4">
-                                        <rect key="frame" x="0.0" y="0.0" width="302" height="86.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="86"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many more pets should you buy?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSP-ac-bxq">
-                                                <rect key="frame" x="6.5" y="0.0" width="289.5" height="20.5"/>
+                                                <rect key="frame" x="7" y="0.0" width="289.5" height="20"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MH-hC-kLz">
-                                                <rect key="frame" x="10" y="37.5" width="282" height="49"/>
+                                                <rect key="frame" x="10" y="37" width="283" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
@@ -41,10 +41,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="pLf-X2-3Kc">
-                                        <rect key="frame" x="0.0" y="169.5" width="302" height="177"/>
+                                        <rect key="frame" x="0.0" y="170" width="303" height="177"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DHK-Jv-FOt">
-                                                <rect key="frame" x="40" y="0.0" width="222" height="85"/>
+                                                <rect key="frame" x="40.5" y="0.0" width="222" height="85"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aRx-4X-8ww">
                                                         <rect key="frame" x="0.0" y="0.0" width="222" height="85"/>
@@ -72,13 +72,16 @@
                                                 </subviews>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is the combined age of all your pets?" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tuU-YM-0Rl">
-                                                <rect key="frame" x="0.0" y="143" width="302" height="34"/>
+                                                <rect key="frame" x="0.5" y="143" width="302.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="pLf-X2-3Kc" firstAttribute="top" secondItem="EZK-lE-Wl4" secondAttribute="bottom" constant="84" id="w1k-ue-8o7"/>
+                                </constraints>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <include reference="EZK-lE-Wl4"/>
@@ -90,19 +93,38 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CYK-Su-77m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="AIH-ki-VdX"/>
                             <constraint firstItem="CYK-Su-77m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="FIh-WS-wo5"/>
                             <constraint firstItem="CYK-Su-77m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="TK1-te-U0P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CYK-Su-77m" secondAttribute="trailing" constant="56" id="VvP-u5-xMV"/>
+                            <constraint firstItem="CYK-Su-77m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="Yhf-y3-z1s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CYK-Su-77m" secondAttribute="trailing" constant="252.5" id="aUV-VL-16C"/>
+                            <constraint firstItem="CYK-Su-77m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fBH-4D-Vhg"/>
+                            <constraint firstItem="CYK-Su-77m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jXA-Gy-sFh"/>
                             <constraint firstItem="CYK-Su-77m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="vhq-qB-2nl"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="VvP-u5-xMV"/>
                                 <exclude reference="aUV-VL-16C"/>
+                                <exclude reference="AIH-ki-VdX"/>
                                 <exclude reference="FIh-WS-wo5"/>
                                 <exclude reference="TK1-te-U0P"/>
+                                <exclude reference="Yhf-y3-z1s"/>
+                                <exclude reference="fBH-4D-Vhg"/>
+                                <exclude reference="jXA-Gy-sFh"/>
                                 <exclude reference="vhq-qB-2nl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CYK-Su-77m"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AIH-ki-VdX"/>
+                                <include reference="Yhf-y3-z1s"/>
+                                <include reference="fBH-4D-Vhg"/>
+                                <include reference="jXA-Gy-sFh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
