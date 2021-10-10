@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532294BE271376740022B7B9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532294BD271376740022B7B9 /* ImagePicker.swift */; };
 		53ED43C2270F526F00625F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED43C1270F526F00625F70 /* AppDelegate.swift */; };
 		53ED43C4270F526F00625F70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED43C3270F526F00625F70 /* SceneDelegate.swift */; };
 		53ED43C6270F526F00625F70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED43C5270F526F00625F70 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532294BD271376740022B7B9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		53ED43BE270F526F00625F70 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53ED43C1270F526F00625F70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53ED43C3270F526F00625F70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				53ED43C1270F526F00625F70 /* AppDelegate.swift */,
 				53ED43C3270F526F00625F70 /* SceneDelegate.swift */,
 				53ED43C5270F526F00625F70 /* ViewController.swift */,
+				532294BD271376740022B7B9 /* ImagePicker.swift */,
 				53ED43C7270F526F00625F70 /* Main.storyboard */,
 				53ED43CA270F527000625F70 /* Assets.xcassets */,
 				53ED43CC270F527000625F70 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53ED43C6270F526F00625F70 /* ViewController.swift in Sources */,
+				532294BE271376740022B7B9 /* ImagePicker.swift in Sources */,
 				53ED43C2270F526F00625F70 /* AppDelegate.swift in Sources */,
 				53ED43C4270F526F00625F70 /* SceneDelegate.swift in Sources */,
 			);
