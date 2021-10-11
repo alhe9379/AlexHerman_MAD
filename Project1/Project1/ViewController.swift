@@ -29,7 +29,7 @@ class ViewController: UIViewController, PKToolPickerObserver, ImagePickerDelegat
     
     var canvasView: PKCanvasView!
     var imgForMarkup: UIImage?
-    var toolPicker = PKToolPicker.init()   
+    var toolPicker = PKToolPicker.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,4 +59,3 @@ class ViewController: UIViewController, PKToolPickerObserver, ImagePickerDelegat
     
     
 }
-

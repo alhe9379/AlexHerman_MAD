@@ -31,9 +31,6 @@ open class ImagePicker: NSObject {
     }
     
     private func action(for type: UIImagePickerController.SourceType, title: String) -> UIAlertAction? {
-        guard UIImagePickerController.isSourceTypeAvailable(type) else {
-            return nil
-        }
         
         return UIAlertAction(title: title, style: .default) { [unowned self] _ in
             self.pickerController.sourceType = type
