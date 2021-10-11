@@ -16,37 +16,125 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqX-Lh-SxG">
-                                <rect key="frame" x="354" y="76" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uwz-7s-b8V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al9-od-AOK">
-                                <rect key="frame" x="105" y="76" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo"/>
-                                <connections>
-                                    <action selector="imagePickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frc-KS-rRh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM2-0v-9jb">
-                                <rect key="frame" x="23" y="76" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Video"/>
-                                <connections>
-                                    <action selector="videoPickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoB-OK-nWc"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1Z-wx-9nx">
-                                <rect key="frame" x="23" y="189" width="371" height="648"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="161" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-HJ-E1z">
+                                <rect key="frame" x="23" y="63" width="371" height="58.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="02D-Uz-2CQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="58.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg1-Va-Eui">
+                                                <rect key="frame" x="29.5" y="0.0" width="48" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Vur-gc-eQJ">
+                                                <rect key="frame" x="0.0" y="28.5" width="107" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM2-0v-9jb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                        <state key="normal" title="Video"/>
+                                                        <connections>
+                                                            <action selector="videoPickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoB-OK-nWc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al9-od-AOK">
+                                                        <rect key="frame" x="66" y="0.0" width="41" height="30"/>
+                                                        <state key="normal" title="Photo"/>
+                                                        <connections>
+                                                            <action selector="imagePickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frc-KS-rRh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="Vur-gc-eQJ"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="Vur-gc-eQJ"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqX-Lh-SxG">
+                                        <rect key="frame" x="268" y="28.5" width="103" height="30"/>
+                                        <state key="normal" title="Save to photos"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uwz-7s-b8V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="02D-Uz-2CQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="02D-Uz-2CQ"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V1Z-wx-9nx">
+                                <rect key="frame" x="0.0" y="153" width="414" height="670"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="670" id="lhB-C4-W7F"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lhB-C4-W7F"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="lhB-C4-W7F"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V1Z-wx-9nx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Zq-4n-Sq0"/>
+                            <constraint firstItem="Vjl-HJ-E1z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lIu-cC-77f"/>
+                            <constraint firstItem="V1Z-wx-9nx" firstAttribute="top" secondItem="Vjl-HJ-E1z" secondAttribute="bottom" constant="31.5" id="lg8-2M-yfw"/>
+                            <constraint firstItem="V1Z-wx-9nx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tUf-E8-C9H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V1Z-wx-9nx" secondAttribute="bottom" constant="39" id="veW-GV-SFu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Vjl-HJ-E1z"/>
+                                <exclude reference="V1Z-wx-9nx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="veW-GV-SFu"/>
+                                <exclude reference="lIu-cC-77f"/>
+                                <exclude reference="7Zq-4n-Sq0"/>
+                                <exclude reference="lg8-2M-yfw"/>
+                                <exclude reference="tUf-E8-C9H"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="V1Z-wx-9nx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Vjl-HJ-E1z"/>
+                                <include reference="V1Z-wx-9nx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="veW-GV-SFu"/>
+                                <include reference="lIu-cC-77f"/>
+                                <include reference="7Zq-4n-Sq0"/>
+                                <include reference="lg8-2M-yfw"/>
+                                <include reference="tUf-E8-C9H"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imgView" destination="V1Z-wx-9nx" id="8Ly-yc-RDJ"/>
@@ -54,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+            <point key="canvasLocation" x="27.536231884057973" y="86.383928571428569"/>
         </scene>
     </scenes>
     <resources>
