@@ -12,8 +12,9 @@
 		FA32BCEB2713EDAF00C044CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32BCEA2713EDAF00C044CD /* ViewController.swift */; };
 		FA32BCF02713EDB000C044CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA32BCEF2713EDB000C044CD /* Assets.xcassets */; };
 		FA32BCF32713EDB000C044CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32BCF12713EDB000C044CD /* LaunchScreen.storyboard */; };
-		FA32BCFE2713EE2F00C044CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32BCFC2713EE2F00C044CD /* Main.storyboard */; };
 		FA32BD012713EE5800C044CD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32BD002713EE5800C044CD /* ImagePicker.swift */; };
+		FA32BD072713F11300C044CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32BD052713F11300C044CD /* Main.storyboard */; };
+		FA32BD0A271496F900C044CD /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32BD09271496F900C044CD /* VideoPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		FA32BCEF2713EDB000C044CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA32BCF22713EDB000C044CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA32BCF42713EDB000C044CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA32BCFD2713EE2F00C044CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../AlexHerman_MAD/Project1/Project1/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA32BD002713EE5800C044CD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FA32BD062713F11300C044CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Project1 copy/Project1/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		FA32BD09271496F900C044CD /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,9 @@
 				FA32BCE82713EDAF00C044CD /* SceneDelegate.swift */,
 				FA32BCEA2713EDAF00C044CD /* ViewController.swift */,
 				FA32BD002713EE5800C044CD /* ImagePicker.swift */,
+				FA32BD09271496F900C044CD /* VideoPicker.swift */,
+				FA32BD052713F11300C044CD /* Main.storyboard */,
 				FA32BCEF2713EDB000C044CD /* Assets.xcassets */,
-				FA32BCFC2713EE2F00C044CD /* Main.storyboard */,
 				FA32BCF12713EDB000C044CD /* LaunchScreen.storyboard */,
 				FA32BCF42713EDB000C044CD /* Info.plist */,
 			);
@@ -127,7 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA32BCFE2713EE2F00C044CD /* Main.storyboard in Resources */,
+				FA32BD072713F11300C044CD /* Main.storyboard in Resources */,
 				FA32BCF32713EDB000C044CD /* LaunchScreen.storyboard in Resources */,
 				FA32BCF02713EDB000C044CD /* Assets.xcassets in Resources */,
 			);
@@ -143,6 +146,7 @@
 				FA32BCEB2713EDAF00C044CD /* ViewController.swift in Sources */,
 				FA32BD012713EE5800C044CD /* ImagePicker.swift in Sources */,
 				FA32BCE72713EDAF00C044CD /* AppDelegate.swift in Sources */,
+				FA32BD0A271496F900C044CD /* VideoPicker.swift in Sources */,
 				FA32BCE92713EDAF00C044CD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,10 +162,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		FA32BCFC2713EE2F00C044CD /* Main.storyboard */ = {
+		FA32BD052713F11300C044CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA32BCFD2713EE2F00C044CD /* Base */,
+				FA32BD062713F11300C044CD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

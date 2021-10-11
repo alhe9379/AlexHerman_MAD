@@ -7,17 +7,17 @@
 
 import UIKit
 
-public protocol ImagePickerDelegate: AnyObject {
+public protocol VideoPickerDelegate: AnyObject {
     func didSelect(image: UIImage?)
 }
 
-open class ImagePicker: NSObject {
+open class VideoPicker: NSObject {
 
     private let pickerController: UIImagePickerController
     private weak var viewController: UIViewController?
-    private weak var delegate: ImagePickerDelegate?
+    private weak var delegate: VideoPickerDelegate?
 
-    public init(viewController: UIViewController, delegate: ImagePickerDelegate) {
+    public init(viewController: UIViewController, delegate: VideoPickerDelegate) {
         self.pickerController = UIImagePickerController()
 
         super.init()
@@ -27,7 +27,7 @@ open class ImagePicker: NSObject {
     
         self.pickerController.delegate = self
         self.pickerController.allowsEditing = true
-        self.pickerController.mediaTypes = ["public.image"]
+        self.pickerController.mediaTypes = ["public.movie"]
     }
     
 
@@ -44,7 +44,7 @@ open class ImagePicker: NSObject {
     }
 }
 
-extension ImagePicker: UIImagePickerControllerDelegate {
+extension VideoPicker: UIImagePickerControllerDelegate {
     
     //https://github.com/theswiftdev/tutorials/tree/master/iOS/Pickers
     public func imagePickerController(_ picker: UIImagePickerController,
@@ -56,6 +56,6 @@ extension ImagePicker: UIImagePickerControllerDelegate {
     }
 }
 
-extension ImagePicker: UINavigationControllerDelegate {
+extension VideoPicker: UINavigationControllerDelegate {
     
 }
