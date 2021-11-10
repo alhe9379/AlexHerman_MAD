@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="switchText">I was born a ramblin gamblin man</string>
+    <string name="checkBox1String">Get lottery ticket?</string>
+    <string name="checkBox2String">Get scratch off ticket?</string>
+    <string name="radioButton1String">$20 ticket?</string>
+    <string name="radioButton2String">$50 ticket?</string>
+    <string name="timesToBuyString">Buy how many times?</string>
+    <string name="buttonString">Buy</string>
+    <string-array name="timesToBuy">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>
