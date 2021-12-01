@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab8</string>
+    <string name="player1String">PLAYER 1</string>
+    <string name="player2String">PLAYER 2</string>
+    <string name="questionHint">Ask a question!</string>
+    <string name="questionInputString">Ask a question!</string>
+    <string name="answerString">Player 2 said:</string>
+    <string name="answerEditTextString">Answer the question!</string>
+    <string name="questionTextViewString">Player 1 asked:</string>
+    <string name="button1String">Go!</string>
+    <string name="webButtonString">Ask an 8 ball</string>
+</resources>
